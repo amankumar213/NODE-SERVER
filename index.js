@@ -8,7 +8,7 @@ app.use(express.json());
 
 (async function connectDB() {
     try {
-        const connetion = await mongoose.connect(process.env.MONGO_URI);
+        const connetion = await mongoose.connect("mongodb+srv://amankumar9415shakya:uRIwsk5UEXXVZWHS@cluster0.tmxpmsm.mongodb.net/NODE-SERVER");
         console.log(`MongoDB connected`);
     }
 catch(error) {
@@ -82,5 +82,6 @@ app.listen(5000, () => {
 });
 
 // these two commands for connect the database
+
 
 
